@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container h1 {
+  font-size: 1.25rem;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  background-color: blue;
+  border-radius: 100%;
+}
+
+header h2 {
+  font-size: small;
+}
+
+.button {
+  display: inline-block;
+  padding-inline: 30px;
+  padding-block: 7px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2ce693;
+  /* cursor: pointer; */
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+  height: 70vh;
+  margin-top: 20px;
+}
+
+nav {
+  width: 300px;
+  height: 100%;
+  color: white;
+  background-color: #313131;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  background-color: #1e1e1e;
+  margin-bottom: 10px;
+  padding-inline: 10px;
+  padding-block: 5px;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav li:last-child {
+  margin-bottom: 0;
+}
+
+.selected {
+  background-color: #4e4e4e;
+}
+
+main section {
+  width: 100%;
+  background-color: #657cff;
+  border-radius: 10px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.assign-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.dj-container {
+  width: 100%;
+  /* width: 60%; */
+}
+
+.dj {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.dj-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dj-container img {
+  width: 50px;
+  height: auto;
+}
+
+.dj-container input {
+  margin-left: 50px;
+}
+
+.assign {
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: larger;
+  color: white;
+}
+
+select {
+  display: inline-block;
+  width: 100%;
+  background-color: #2ce693;
+  border: none;
+  border-radius: 10px;
+  padding-inline: 10px;
+  padding-block: 5px;
+  margin-bottom: 20px;
+}
+
+select option {
+  background-color: white;
+}
+
+#dj-select {
+  height: 100%;
+}
+
+.manage-playlists {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.manage-playlists button {
+  background-color: #2ce693;
+  border: none;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+}
+
+.playlists {
+  display: grid;
+  overflow: scroll;
+  margin-top: 20px;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+}
+
+.playlist {
+  grid: span 1;
+  grid-row: auto;
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.playlist h3 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.playlist img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+table {
+  margin-top: 20px;
+  background-color: #1e1e1e;
+  width: 100%;
+  /* border-radius: 10px; */
+}
+
+tr {
+  background-color: #1e1e1e;
+  /* border-radius: 10px; */
+}
+
+table td {
+  padding: 5px;
+  /* border-radius: 10px; */
+}
+
+.song-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.song-info div h3 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.song-info div h4 {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+table td img {
+  width: 50px;
+}
+
+.trash {
+  width: 20px;
+}
+
+footer {
+  margin-top: 20px;
+  height: 100%;
+}
+
+footer ul {
+  list-style: none;
+}

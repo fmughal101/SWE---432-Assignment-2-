@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <div class="logo"></div>
+        <h1>Yafri</h1>
+      </div>
+      <h2>Producer Dashboard</h2>
+      <button class="button cursor" type="button">Menu</button>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li class="selected"><a href="./assign-dj.html">Assign DJs</a></li>
+          <li><a href="./manage-playlists.html">Manage Playlists</a></li>
+          <li><a href="">Trends</a></li>
+        </ul>
+      </nav>
+      <section>
+        <form id="dj-select" action="">
+          <div class="button">Assign a DJ</div>
+          <div class="assign-container">
+            <div class="dj-container">
+              <div class="dj">
+                <div class="dj-info">
+                  <img src="./imgs/account-svgrepo-com.png" alt="DJ Photo" />
+                  <div>
+                    <h3>DJ Bob Bobby</h3>
+                    <h4>10 years experiance</h4>
+                  </div>
+                </div>
+                <input name="selected-dj" type="checkbox" />
+              </div>
+              <div class="dj">
+                <div class="dj-info">
+                  <img src="./imgs/account-svgrepo-com.png" alt="DJ Photo" />
+                  <div>
+                    <h3>DJ Spongebob</h3>
+                    <h4>25 years experiance</h4>
+                  </div>
+                </div>
+                <input name="selected-dj" type="checkbox" />
+              </div>
+              <div class="dj">
+                <div class="dj-info">
+                  <img src="./imgs/account-svgrepo-com.png" alt="DJ Photo" />
+                  <div>
+                    <h3>DJ Mr. Poopy Pants</h3>
+                    <h4>200 Billion years experiance</h4>
+                  </div>
+                </div>
+                <input name="selected-dj" type="checkbox" />
+              </div>
+            </div>
+            <div class="assign">
+              <label for="time">Assign A Time</label>
+              <select name="time" id="time">
+                <option value="" disabled selected>Select your option</option>
+                <option value="10 AM">10 AM</option>
+                <option value="12 PM">12 PM</option>
+                <option value="3 PM">3 PM</option>
+                <option value="6 PM">6 PM</option>
+                <option value="9 PM">9 PM</option>
+              </select>
+              <label for="playlist">Assign A Playlist</label>
+              <select name="playlist" id="playlist">
+                <option value="" disabled selected>Select your option</option>
+                <option value="Rock">Rock</option>
+                <option value="Hip Hop">Hip Hop</option>
+                <option value="Country">Country</option>
+                <option value="Pop">Pop</option>
+                <option value="K-pop">K-pop</option>
+                <option value="J-pop">J-pop</option>
+              </select>
+              <button class="button cursor" style="width: 100%" type="button">
+                Confirm Selection
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <h2>Footer</h2>
+      <ul>
+        <li>Contact Us</li>
+        <li>Terms and Conditions</li>
+        <li>Careers</li>
+        <li>FAQ</li>
+      </ul>
+    </footer>
+  </body>
+</html>
